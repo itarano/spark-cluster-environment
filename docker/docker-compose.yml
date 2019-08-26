@@ -9,6 +9,7 @@ services:
       MASTER: spark://master:7077
       SPARK_CONF_DIR: /conf
       SPARK_PUBLIC_DNS: localhost
+      #SPARK_SUBMIT_OPTS: -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=4000 #debug
     expose:
       - 7001
       - 7002
@@ -22,6 +23,7 @@ services:
       - 6066:6066
       - 7077:7077
       - 8081:8080
+      #- 4000:4000 #debug
     volumes:
       - ./volumes/spark-master/conf:/conf
       - ./volumes/spark-master/data:/tmp/data
