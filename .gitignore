@@ -1,2 +1,4 @@
 tareas.txt
 docker/volumes/spark-master/data/counter.py
+projects/scala/*/target
+projects/scala/*/project
