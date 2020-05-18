@@ -19,11 +19,11 @@ services:
       - 7077
       - 6066
     ports:
-      - 4040:4040
+      - 4041:4040
       - 6066:6066
       - 7077:7077
       - 8081:8080
-      #- 4000:4000 #debug
+      - 4000:4000 #debug
     volumes:
       - ./volumes/spark-master/conf:/conf
       - ./volumes/spark-master/data:/tmp/data
