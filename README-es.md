@@ -7,7 +7,7 @@ El objetivo de este proyecto es desplegar un entorno de desarrollo local utiliza
 
 ### Despliegue del entorno
 Como viene siendo habitual en este tipo de entornos, sencillamente hacemos *make up* o *docker-compose up*, que se encarga de crear y desplegar los contenedores en una red local.
-
+Version de Spark: 3.2.0
 ### Ejemplo
 En la carpeta **projects** tenemos un ejemplo típico para contar palabras de un texto (PySpark) y un ejemplo típico de cálculo de *pi* con scala. 
 

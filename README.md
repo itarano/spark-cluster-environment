@@ -6,7 +6,8 @@ English | [Español](./README-es.md)
 The goal of this project is to deploy a local development environment using containers (docker-compose) to create an Apache Spark cluster to deploy and test spark local **python/scala** jobs.
 
 ### Environment deploy
-Run *make up* to deploy the environment, i.e, create network and containers and start them. 
+Run *make up* to deploy the environment, i.e, create network and containers and start them.
+Spark 3.2.0 version.
 
 ### Example
 In **projects** folder we have a typical example of word count in python (PySpark) and a scala example to calculate the value of *pi*. 
