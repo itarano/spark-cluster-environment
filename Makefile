@@ -1,5 +1,5 @@
 up:
-	docker-compose up -d
+	cd docker && docker-compose up -d
 
 submit-python-counter-job:
 	cp projects/python/word-count/counter.py docker/volumes/spark-master/data && docker exec -it spark spark-submit /tmp/data/counter.py
@@ -23,4 +23,4 @@ submit-scala-pi-job: sbt-clean sbt-package
 	cp projects/scala/sparkpi/target/scala-2.12/spark-pi-project_2.12-1.0.0.jar docker/volumes/spark-master/data && docker exec -it spark spark-submit --class SparkPi --master spark://spark:7077 /tmp/data/spark-pi-project_2.12-1.0.0.jar
 
 down:
-	docker-compose down -v
+	cd docker && docker-compose down -v
