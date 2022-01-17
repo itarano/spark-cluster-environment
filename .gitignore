@@ -3,3 +3,4 @@ projects/scala/*/target
 projects/scala/*/project
 docker/volumes/**/*.jar
 /**/.idea
+*TODO.md*
