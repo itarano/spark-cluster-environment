@@ -11,7 +11,7 @@ Como viene siendo habitual en este tipo de entornos, sencillamente hacemos *make
 ### Ejemplo
 En la carpeta **projects** tenemos un ejemplo típico para contar palabras de un texto (PySpark) y un ejemplo típico de cálculo de *pi* con scala. 
 
-Para ejecutar el proyecto **python/word-count**, hacemos **make submit-python-counter-job**. Ejecutando dicho script, por un lado se despliega el job de python asociado *counter.py* en el contenedor master de spark y por otro, se ejecuta el mismo, de tal forma que podemos ver los resultados del conteo de palabras en un cmd o en la propia consola proporcionada por spyder o visual studio code, por ejemplo.
+Para ejecutar el proyecto **python/word-count**, hacemos *make submit-python-counter-job*. Ejecutando dicho script, por un lado se despliega el job de python asociado *counter.py* en el contenedor master de spark y por otro, se ejecuta el mismo, de tal forma que podemos ver los resultados del conteo de palabras en un cmd o en la propia consola proporcionada por spyder o visual studio code, por ejemplo.
 
 Dentro del proyecto **scala/sparkpi**, tenemos la típica estrucutra de proyecto de scala. Para desplegarlo podemos hacer uso de *make submit-scala-pi-job*, que por un lado hace clean y package del proyecto (haciendo uso de un contenedor auxiliar con *sbt* instalado, de forma que **no necesitamos *sbt* localmente**) y por otro despliega el *.jar* en el nodo master de spark.Además, tenemos dos script *.bat*: *sbt.bat* y *submit-scala-spark.bat*.
  
